@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply here!</title>
+    <style>
+        .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: grey;
+  color: white;
+}
+    body {
+        background-color: antiquewhite;
+    }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="ClassActivity.html">Home</a>
+        <a class="active" href="Application.html">Application</a>
+        
+      </div>
+      <br>
+      <br>
+    <xxxx>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="lstudy">Level of Study:</label>
+            <select id="lstudy" name="lstudy" size="6" multiple>
+            <option value="primary">Primary Education</option>
+            <option value="secondary">Secondary Education</option>
+            <option value="olevel">O-levels</option>
+            <option value="diploma">Diploma</option>
+            <option value="degree">Bachelor's Degree</option>
+            <option value="masters">Master's Degree</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Profile</legend>
+            <p>Talk about yourself:</p>
+            <textarea name="about" rows="10" cols="30" placeholder="In 300 words, tell us about yourself"></textarea>
+            <br><br>
+        
+            <p>Experiences: </p>
+            <textarea name="experience" rows="15" cols="30" placeholder="Any Experiences you have"></textarea>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>About the Job</legend>
+            <label for="pos">Position you are applying for:</label>
+            <select id="pos" name="pos">
+            <option value="select" >--Select--</option>
+            <option value="dev">Web Developer</option>
+            <option value="prog">Programmer</option>
+            <option value="ui">UI/UX Deigner</option>
+            </select>
+            <br>
+            Are you willing to relocate: <xxxx type="radio" id="yes" name="yes" value="Yes">Yes
+            <input type="radio" id="no" name="no" value="No">  No
+        </fieldset>
+        <br>
+        <center>
+            <input type="submit" value="Submit"> 
+            <input type="reset">
+        </center>
+        
+    </xxxx>
+</body>
+</html>

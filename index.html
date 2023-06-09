@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLICATION</title>
+    <style>
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+        table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Kindly Fill The Feedback Form</h1>
+    </center>
+<hr width="80%" size="10" style="color: aliceblue;">
+    <center>
+    <table border="1">
+        <form id="my-form" method="post">
+            <tr>
+                <th colspan="2">
+                    <h2>FEEDBACK FORM</h2>
+                </th>
+            </tr>
+            <tr>
+                <td>First Name:</td>
+                <td>
+                    <input type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td>
+                    <input type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Feedback:</td>
+                <td>
+                    <textarea name="feed" id="" cols="30" rows="10" require></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Non-Binary
+                </td>
+            </tr>
+            <tr>
+                <td>Services Offered:</td>
+                <td>
+                    <input type="checkbox" name="services">Cash Withdrawal
+                    <input type="checkbox" name="services">Cash Deposit
+                    <input type="checkbox" name="services">Balance Inquiry
+                    <input type="checkbox" name="services">Loan Inquiry
+                    <input type="checkbox" name="services">New Account
+                    
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Submit Details Above</button>
+                    <button type="reset">Reset All</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+    </center>
+
+    <script>
+        //Alert Before 
+        const welcome = alert("In regards to thes services offered, Kindly Fill the Feedback Form for Jamia Investment Bank");
+        //Alert After
+        document.getElementById('my-form').onsubmit = function () 
+        {
+            alert("Thank you for submitting your Feedback Form :)");
+        };
+     </script>
+</body>
+</html>
